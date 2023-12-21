@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
 	int array[6]={7,2,8,1,39,0};
-	cout<<"Array before BUBBLE Sort\n";
+	cout<<"Array before BUBBLE SORT\n";
 	for(int i=0;i<6;i++){
 		cout<<array[i]<<" ";
 	}
@@ -18,7 +18,7 @@ int main(){
 		}
 	}
 	
-	cout<<"Array after BUBBLE Sort\n";
+	cout<<"Array after BUBBLE SORT\n";
 	for(int i=0;i<6;i++){
 		cout<<array[i]<<" ";
 	}
