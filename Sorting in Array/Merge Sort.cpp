@@ -3,7 +3,7 @@ using namespace std;
 void merge(int array[],int lb,int mid,int ub){
     int i=lb;
     int j=mid+1;
-    int k=0;  
+    int k=lb;  
     int b[10];
     while(i<=mid && j<=ub){
         if(array[i]<array[j]){
@@ -27,8 +27,8 @@ void merge(int array[],int lb,int mid,int ub){
         j++;
         k++;
     }
-    for (k=0;k<ub-lb+1;k++) {
-        array[lb + k] = b[k];  // Adjust index to copy elements from b to array
+    for (k=lb;k<=ub;k++) {
+        array[k] = b[k]; 
     }
 }
 
